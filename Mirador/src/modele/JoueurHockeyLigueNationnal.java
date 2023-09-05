@@ -6,12 +6,12 @@ public class JoueurHockeyLigueNationnal {
 	protected int age;
 	
 	protected int pointsCarriereSaison;
-	protected int partiesJouesSaison;
+	protected int partiesJoueesSaison;
 	protected int butsSaison;
 	protected int assistancesSaison;
 	
 	protected int pointsCarriereSerie;
-	protected int partiesJouesSerie;
+	protected int partiesJoueesSerie;
 	protected int butsSerie;
 	protected int assistancesSerie;
 	
@@ -35,10 +35,10 @@ public class JoueurHockeyLigueNationnal {
 		this.pointsCarriereSaison = pointsCarriereSaison;
 	}
 	public int getPartiesJouesSaison() {
-		return partiesJouesSaison;
+		return partiesJoueesSaison;
 	}
 	public void setPartiesJouesSaison(int partiesJouesSaison) {
-		this.partiesJouesSaison = partiesJouesSaison;
+		this.partiesJoueesSaison = partiesJouesSaison;
 	}
 	public int getButsSaison() {
 		return butsSaison;
@@ -59,10 +59,10 @@ public class JoueurHockeyLigueNationnal {
 		this.pointsCarriereSerie = pointsCarriereSerie;
 	}
 	public int getPartiesJouesSerie() {
-		return partiesJouesSerie;
+		return partiesJoueesSerie;
 	}
 	public void setPartiesJouesSerie(int partiesJouesSerie) {
-		this.partiesJouesSerie = partiesJouesSerie;
+		this.partiesJoueesSerie = partiesJouesSerie;
 	}
 	public int getButsSerie() {
 		return butsSerie;

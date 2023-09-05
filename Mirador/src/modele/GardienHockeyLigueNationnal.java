@@ -5,7 +5,16 @@ public class GardienHockeyLigueNationnal {
 	protected String nom;
 	protected int age;
 	protected int partiesJouesSaison;
+	protected int partiesJouesSerie;
 	protected float pourcentageArrets;
+	protected float butsAccordesParParties;
+	
+	public int getPartiesJouesSerie() {
+		return partiesJouesSerie;
+	}
+	public void setPartiesJouesSerie(int partiesJouesSerie) {
+		this.partiesJouesSerie = partiesJouesSerie;
+	}
 	public String getNom() {
 		return nom;
 	}
@@ -36,6 +45,6 @@ public class GardienHockeyLigueNationnal {
 	public void setButsAccordesParParties(float butsAccordesParParties) {
 		this.butsAccordesParParties = butsAccordesParParties;
 	}
-	protected float butsAccordesParParties;
+	
 	
 }
