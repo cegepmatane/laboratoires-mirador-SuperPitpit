@@ -4,13 +4,17 @@ public class JoueurHockeyLigueNationnal {
 
 	protected String nom;
 	protected int age;
+	
 	protected int pointsCarriereSaison;
 	protected int partiesJouesSaison;
 	protected int butsSaison;
 	protected int assistancesSaison;
+	
 	protected int pointsCarriereSerie;
 	protected int partiesJouesSerie;
 	protected int butsSerie;
+	protected int assistancesSerie;
+	
 	
 	public String getNom() {
 		return nom;
@@ -72,6 +76,6 @@ public class JoueurHockeyLigueNationnal {
 	public void setAssistancesSerie(int assistancesSerie) {
 		this.assistancesSerie = assistancesSerie;
 	}
-	protected int assistancesSerie;
+	
 	
 }

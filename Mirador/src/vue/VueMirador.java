@@ -7,7 +7,7 @@ import architecture.Vue;
 import controleur.ControleurMirador;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
-import modele.Nouvelle;
+import modele.Nouvelles;
 import modele.StatistiquesMeteores;
 public class VueMirador extends Vue {
 
@@ -43,13 +43,13 @@ public class VueMirador extends Vue {
 		
 	}
 
-	public void afficherNouvelles(List<Nouvelle> listeNouvelles) {
+	public void afficherNouvelles(List<Nouvelles> listeNouvelles) {
 		// TODO Auto-generated method stub
 		
 		TextArea textAreaNouvelles = (TextArea)lookup("#nouvelles-spacex");
 		
 		
-		for(Nouvelle nouvelle : listeNouvelles) {
+		for(Nouvelles nouvelle : listeNouvelles) {
 			textAreaNouvelles.appendText("" + nouvelle.getTitre() + "\n");
 		}
 	}
