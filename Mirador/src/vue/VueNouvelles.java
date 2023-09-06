@@ -17,5 +17,7 @@ public class VueNouvelles extends Vue {
 		super.controleur = this.controleur = new ControleurNouvelles();
 	}
 	
+	
+	
 
 }

@@ -6,6 +6,8 @@ public class LigueHockey {
 	protected String pays;
 	protected String qualitéJoueurs;
 	protected int nombreJoueurs;
+	protected int anneeOuverture;
+	
 	public String getNom() {
 		return nom;
 	}
@@ -36,6 +38,6 @@ public class LigueHockey {
 	public void setAnneeOuverture(int anneeOuverture) {
 		this.anneeOuverture = anneeOuverture;
 	}
-	protected int anneeOuverture;
+	
 	
 }

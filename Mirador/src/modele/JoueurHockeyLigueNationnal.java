@@ -16,6 +16,28 @@ public class JoueurHockeyLigueNationnal {
 	protected int assistancesSerie;
 	
 	
+	
+	
+	public JoueurHockeyLigueNationnal() {
+		super();
+	}
+	
+	public JoueurHockeyLigueNationnal(String nom, int age, int partiesJoueesSaison, int pointsCarriereSaison,
+			int butsSaison, int assistancesSaison, int partiesJoueesSerie, int pointsCarriereSerie, int butsSerie,
+			int assistancesSerie) {
+		super();
+		this.nom = nom;
+		this.age = age;
+		this.pointsCarriereSaison = pointsCarriereSaison;
+		this.partiesJoueesSaison = partiesJoueesSaison;
+		this.butsSaison = butsSaison;
+		this.assistancesSaison = assistancesSaison;
+		this.pointsCarriereSerie = pointsCarriereSerie;
+		this.partiesJoueesSerie = partiesJoueesSerie;
+		this.butsSerie = butsSerie;
+		this.assistancesSerie = assistancesSerie;
+	}
+	
 	public String getNom() {
 		return nom;
 	}
