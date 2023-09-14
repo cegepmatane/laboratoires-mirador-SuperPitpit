@@ -19,12 +19,12 @@ public class VueTremblementDeTerre extends Vue {
 		super.controleur = this.controleur = new ControleurTremblementDeTerre();
 	}
 	
-	public void afficherEmplacement() {
+	public void afficherEmplacement(String emplacement) {
 		
 		System.out.println("afficherEmplacement");
 		
-		//Label emplacementLabel = (Label)lookup("#emplacement-tremblement-de-terre");
-		//emplacementLabel.setText(emplacement);
+		Label emplacementLabel = (Label)lookup("#emplacement-tremblement-de-terre");
+		emplacementLabel.setText("Emplacement : " + emplacement);
 	}
 	
 }
