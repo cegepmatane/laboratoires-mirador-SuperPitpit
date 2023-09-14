@@ -27,4 +27,18 @@ public class VueTremblementDeTerre extends Vue {
 		emplacementLabel.setText("Emplacement : " + emplacement);
 	}
 	
+	public void afficherMagnitude(int magnitude) {
+		
+		System.out.println("afficherMagnitude");
+		
+		Label magnitudeLabel = (Label)lookup("#magnitude-tremblement-de-terre");
+		magnitudeLabel.setText("Magnitude : " + magnitude);
+		
+	}
+	
+	public void afficherDate() {
+		
+		System.out.println("afficherDate");
+		
+	}
 }

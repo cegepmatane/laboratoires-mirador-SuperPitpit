@@ -19,7 +19,8 @@ public class ControleurTremblementDeTerre extends Controleur {
 		VueTremblementDeTerre vue = VueTremblementDeTerre.getInstance();
 		
 		vue.afficherEmplacement("Tonga");
-		
+		vue.afficherMagnitude(5);
+		vue.afficherDate();
 	}
 	
 }
