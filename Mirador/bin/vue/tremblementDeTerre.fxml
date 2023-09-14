@@ -92,12 +92,12 @@
                            <children>
                               <VBox prefHeight="432.0" prefWidth="490.0" spacing="10.0">
                                  <children>
-                                    <Label id="nomJoueur" fx:id="nomJoueur" alignment="CENTER" lineSpacing="5.0" prefHeight="245.0" prefWidth="490.0" style="-fx-background-color: #6aa84f; -fx-background-radius: 30;" text="Nom : " textFill="WHITE">
+                                    <Label id="emplacement-tremblement-de-terre" fx:id="emplacementTremblementDeTerre" alignment="CENTER" lineSpacing="5.0" prefHeight="245.0" prefWidth="490.0" style="-fx-background-color: #6aa84f; -fx-background-radius: 30;" text="Emplacement :" textFill="WHITE">
                                        <font>
                                           <Font name="Chandas" size="35.0" />
                                        </font>
                                     </Label>
-                                    <Label id="ageJoueur" fx:id="ageJoueur" alignment="CENTER" prefHeight="269.0" prefWidth="490.0" style="-fx-background-color: #6aa84f; -fx-background-radius: 30;" text="Age : " textFill="WHITE">
+                                    <Label id="magnitude-tremblement-de-terre" fx:id="magnitudeTremblementDeTerre" alignment="CENTER" prefHeight="269.0" prefWidth="490.0" style="-fx-background-color: #6aa84f; -fx-background-radius: 30;" text="Magnitude :" textFill="WHITE">
                                        <font>
                                           <Font name="Chandas" size="35.0" />
                                        </font>
@@ -115,11 +115,11 @@
                   </Label>
                   <Pane layoutX="523.0" prefHeight="526.0" prefWidth="590.0">
                      <children>
-                        <VBox id="liste-astronautes" fx:id="listeAstronautes" layoutX="-7.0" layoutY="-32.0" prefHeight="272.0" prefWidth="538.0" spacing="10.0">
+                        <VBox id="liste-astronautes" fx:id="listeAstronautes" layoutX="-7.0" layoutY="69.0" prefHeight="432.0" prefWidth="538.0" spacing="10.0">
                            <children>
                               <HBox prefHeight="92.0" prefWidth="538.0">
                                  <children>
-                                    <Label alignment="CENTER" prefHeight="65.0" prefWidth="515.0" style="-fx-background-radius: 10;" styleClass="valeur" text="Saisons">
+                                    <Label alignment="CENTER" prefHeight="65.0" prefWidth="515.0" style="-fx-background-radius: 10;" styleClass="valeur" text="Date et localisation">
                                        <HBox.margin>
                                           <Insets left="10.0" top="10.0" />
                                        </HBox.margin>
@@ -129,59 +129,24 @@
                                     </Label>
                                  </children>
                               </HBox>
-                              <VBox prefHeight="37.0" prefWidth="538.0">
+                              <VBox prefHeight="334.0" prefWidth="538.0">
                                  <children>
-                                    <Label id="partiesSaison" fx:id="partiesSaison" prefHeight="37.0" prefWidth="538.0" text="Parties jouées dans sa carrière : ">
+                                    <Label id="date-tremblement-de-terre" fx:id="dateTremblementDeTerre" prefHeight="77.0" prefWidth="538.0" text="Date :">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label id="longitude-tremblement-de-terre" fx:id="longitudeTremblementDeTerre" prefHeight="85.0" prefWidth="538.0" text="Longitude :">
                                        <font>
                                           <Font size="15.0" />
                                        </font></Label>
-                                 </children>
-                              </VBox>
-                              <Label id="pointsSaison" fx:id="pointsSaison" prefHeight="35.0" prefWidth="538.0" text="Points faits durant sa carrière : ">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font></Label>
-                              <Label id="butsSaison" fx:id="butsSaison" prefHeight="35.0" prefWidth="538.0" text="Buts marqués durant sa carrière : ">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font></Label>
-                              <Label id="assistancesSaison" fx:id="assistancesSaison" prefHeight="35.0" prefWidth="538.0" text="Assistances faites durant sa carrière : ">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font></Label>
-                           </children>
-                        </VBox>
-                        <VBox id="liste-passages" fx:id="listePassages" layoutX="3.0" layoutY="276.0" prefHeight="252.0" prefWidth="538.0" spacing="10.0">
-                           <children>
-                              <HBox prefHeight="92.0" prefWidth="538.0">
-                                 <children>
-                                    <Label alignment="CENTER" prefHeight="65.0" prefWidth="515.0" style="-fx-background-radius: 10;" styleClass="valeur" text="Séries">
-                                       <HBox.margin>
-                                          <Insets left="10.0" top="10.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets left="10.0" />
-                                       </padding>
+                                    <Label id="latitude-tremblement-de-terre" fx:id="latitudeTremblementDeTerre" prefHeight="86.0" prefWidth="538.0" text="Latitude :">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
                                     </Label>
                                  </children>
-                              </HBox>
-                              <VBox prefHeight="0.0" prefWidth="538.0" />
-                              <Label id="partiesSerie" fx:id="partiesSerie" prefHeight="37.0" prefWidth="538.0" text="Parties jouées dans sa carrière : ">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font></Label>
-                              <Label id="pointsSerie" fx:id="pointsSerie" prefHeight="37.0" prefWidth="538.0" text="Points faits durant sa carrière : ">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font></Label>
-                              <Label id="butsSerie" fx:id="butsSerie" prefHeight="37.0" prefWidth="538.0" text="Buts marqués durant sa carrière : ">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font></Label>
-                              <Label id="assistancesSerie" fx:id="assistancesSerie" prefHeight="37.0" prefWidth="538.0" text="Assistances faites durant sa carrière : ">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font></Label>
+                              </VBox>
                            </children>
                         </VBox>
                      </children>

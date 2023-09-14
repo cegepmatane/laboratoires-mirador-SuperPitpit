@@ -9,6 +9,22 @@ public class GardienHockeyLigueNationnal {
 	protected float pourcentageArrets;
 	protected float butsAccordesParParties;
 	
+
+	public GardienHockeyLigueNationnal() {
+		super();
+	}
+	
+	public GardienHockeyLigueNationnal(String nom, int age, int partiesJouesSaison, int partiesJouesSerie,
+			float pourcentageArrets, float butsAccordesParParties) {
+		super();
+		this.nom = nom;
+		this.age = age;
+		this.partiesJouesSaison = partiesJouesSaison;
+		this.partiesJouesSerie = partiesJouesSerie;
+		this.pourcentageArrets = pourcentageArrets;
+		this.butsAccordesParParties = butsAccordesParParties;
+	}
+	
 	public int getPartiesJouesSerie() {
 		return partiesJouesSerie;
 	}
