@@ -2,9 +2,8 @@ package modele;
 
 public class TremblementDeTerre {
 
-	
-	protected String date;
 	protected String emplacement;
+	protected String date;
 	protected float longitude;
 	protected float latitude;
 	protected int magnitude;
@@ -15,6 +14,18 @@ public class TremblementDeTerre {
 	
 	
 	
+
+	public TremblementDeTerre(String emplacement, String date, float longitude, float latitude, int magnitude) {
+		super();
+		this.emplacement = emplacement;
+		this.date = date;
+		this.longitude = longitude;
+		this.latitude = latitude;
+		this.magnitude = magnitude;
+	}
+
+
+
 
 	public String getDate() {
 		return date;

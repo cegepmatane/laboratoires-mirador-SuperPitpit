@@ -15,6 +15,7 @@ import vue.VueGardienHockeyLigueNationnal;
 import vue.VueJoueurHockeyLigueNationnal;
 import vue.VueMirador;
 import vue.VueNouvelles;
+import vue.VueTremblementDeTerre;
 
 public class App {
 
@@ -24,10 +25,10 @@ public class App {
 		// Controleur.choisirVuePrincipale(VueMirador.class);
 		
 		//Controleur.choisirVuePrincipale(VueNouvelles.class);
-		Controleur.choisirVuePrincipale(VueJoueurHockeyLigueNationnal.class);
+		//Controleur.choisirVuePrincipale(VueJoueurHockeyLigueNationnal.class);
 		//Controleur.choisirVuePrincipale(VueGardienHockeyLigueNationnal.class);
 
-		
+		Controleur.choisirVuePrincipale(VueTremblementDeTerre.class);
 				
 		//NouvelleDAO nouvellesDAO = new NouvelleDAO();
 		//List<Nouvelle> nouvelles = nouvellesDAO.listerNouvelle();

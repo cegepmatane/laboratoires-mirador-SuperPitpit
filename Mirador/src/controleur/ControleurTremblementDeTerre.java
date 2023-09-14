@@ -1,9 +1,25 @@
 package controleur;
 
-public class ControleurTremblementDeTerre {
+import com.sun.media.jfxmedia.logging.Logger;
+
+import architecture.Controleur;
+import vue.VueTremblementDeTerre;
+
+public class ControleurTremblementDeTerre extends Controleur {
 
 	public ControleurTremblementDeTerre() {
-		// TODO Auto-generated constructor stub
+		
+		Logger.logMsg(Logger.INFO, "new ControleurTremblementDeTerre()");
+		
 	}
 
+	
+	public void initialiser(){
+		
+		VueTremblementDeTerre vue = VueTremblementDeTerre.getInstance();
+		
+		vue.afficherEmplacement();
+		
+	}
+	
 }
