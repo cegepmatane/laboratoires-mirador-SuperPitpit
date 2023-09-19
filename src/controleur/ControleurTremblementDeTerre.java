@@ -20,7 +20,10 @@ public class ControleurTremblementDeTerre extends Controleur {
 		
 		vue.afficherEmplacement("Tonga");
 		vue.afficherMagnitude(5);
-		vue.afficherDate();
+		vue.afficherDate("23/09/2023");
+		vue.afficherLongitude((float)-2.333);
+		vue.afficherLatitude((float)4.32323);
+		
 	}
 	
 }

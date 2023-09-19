@@ -36,9 +36,31 @@ public class VueTremblementDeTerre extends Vue {
 		
 	}
 	
-	public void afficherDate() {
+	public void afficherDate(String date) {
 		
 		System.out.println("afficherDate");
 		
+		Label dateLabel = (Label)lookup("#date-tremblement-de-terre");
+		dateLabel.setText("Date : " + date);
+		
 	}
+	
+	public void afficherLongitude(float longitude) {
+		
+		System.out.println("afficherLongitude");
+		
+		Label longitudeLabel = (Label)lookup("#longitude-tremblement-de-terre");
+		longitudeLabel.setText("Longitude : " + longitude);
+		
+	}
+	
+	public void afficherLatitude(float latitude) {
+		
+		System.out.println("afficherLatitude");
+		
+		Label latitudeLabel = (Label)lookup("#latitude-tremblement-de-terre");
+		latitudeLabel.setText("Latitude : " + latitude);
+		
+	}
+	
 }
