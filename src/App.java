@@ -18,6 +18,7 @@ import modele.Asteroide;
 import modele.FaitInutile;
 import modele.Nouvelle;
 import modele.TremblementDeTerre;
+import vue.VueAsteroide;
 import vue.VueFaitInutile;
 import vue.VueMirador;
 import vue.VueNouvelles;
@@ -76,10 +77,8 @@ public class App {
 		System.out.println(asteroide.getNom());
 		*/
 		
-		//Controleur.choisirVuePrincipale(Vue.class);
-		
-		
-		//Fenetre.launch(Fenetre.class, parametres);
+		Controleur.choisirVuePrincipale(VueAsteroide.class);
+		Fenetre.launch(Fenetre.class, parametres);
 	}
 
 }
