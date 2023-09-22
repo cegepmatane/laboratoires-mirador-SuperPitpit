@@ -16,7 +16,10 @@ public class ControleurFaitInutile extends Controleur {
 	{
 		
 		VueFaitInutile vue = VueFaitInutile.getInstance();
-		vue.afficherfaitInutile();
+		vue.afficherfaitInutile("fait");
+		vue.afficherSource("minecraft.net");
+		vue.afficherLangue("fr");
+		vue.afficherUrl("https");
 	}
 
 }

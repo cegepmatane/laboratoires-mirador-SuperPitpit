@@ -19,11 +19,34 @@ public class VueFaitInutile extends Vue {
 		super.controleur = this.controleur = new ControleurFaitInutile();
 	}
 	
-	public void afficherfaitInutile() {
+	public void afficherfaitInutile(String fait) {
 		System.out.println("afficherfaitInutile");
 		Label faitInutileLabel = (Label)lookup("#fait-inutile");
-		faitInutileLabel.setText("dsdd");
+		faitInutileLabel.setText("Fait : " + fait);
 	}
 	
+	public void afficherSource(String source){
+			
+		System.out.println("afficherSource");
+		Label sourceLabel = (Label)lookup("#source-fait-inutile");
+		sourceLabel.setText("Source : " + source);
+		
+	}
+	
+	public void afficherLangue(String langue) {
+		
+		System.out.println("afficherLangue");
+		Label langueLabel = (Label)lookup("#langue-fait-Inutile");
+		langueLabel.setText("Langue : " + langue);
+		
+	}
+	
+	public void afficherUrl(String url) {
+		
+		System.out.println("afficherUrl");
+		Label urlLabel = (Label)lookup("#url-fait-inutile");
+		urlLabel.setText("Url : " + url);
+		
+	}
 
 }
