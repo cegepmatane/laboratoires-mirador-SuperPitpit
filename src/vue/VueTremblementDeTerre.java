@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 import com.sun.media.jfxmedia.logging.Logger;
 
 import architecture.Vue;
-import controleur.ControleurNumerique;
 import controleur.ControleurTremblementDeTerre;
 import javafx.scene.control.Label;
 
