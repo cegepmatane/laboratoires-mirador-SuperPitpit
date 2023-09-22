@@ -30,11 +30,12 @@ public class App {
 		
 		// Refaire la même ligne pour choisir la ligne voulut
 		// Controleur.choisirVuePrincipale(VueMirador.class);
-		
 		//Controleur.choisirVuePrincipale(VueNouvelles.class);
 		//Controleur.choisirVuePrincipale(VueJoueurHockeyLigueNationnal.class);
 		//Controleur.choisirVuePrincipale(VueGardienHockeyLigueNationnal.class);
-
+		//StationSpatialeDAO sationSpatiale = new StationSpatialeDAO();
+		//sationSpatiale.detaillerPosition();
+		
 		
 				
 		//NouvelleDAO nouvellesDAO = new NouvelleDAO();
@@ -42,9 +43,6 @@ public class App {
 		//for(Nouvelle nouvelle : nouvelles) {
 		//	System.out.println("Titre : " + nouvelle.getTitre());
 		//}
-		
-		//StationSpatialeDAO sationSpatiale = new StationSpatialeDAO();
-		//sationSpatiale.detaillerPosition();
 		
 		// Test sur les tremblements de terre
 		
@@ -77,7 +75,8 @@ public class App {
 		System.out.println(asteroide.getNom());
 		*/
 		
-		Controleur.choisirVuePrincipale(VueAsteroide.class);
+		//Controleur.choisirVuePrincipale(VueAsteroide.class);
+		
 		Fenetre.launch(Fenetre.class, parametres);
 	}
 
