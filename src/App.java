@@ -9,16 +9,16 @@ import java.util.Scanner;
 import architecture.Controleur;
 import architecture.Fenetre;
 import controleur.ControleurFaitInutile;
+import donnee.AsteroideDAO;
 import donnee.FaitInutileDAO;
 import donnee.NouvelleDAO;
 import donnee.StationSpatialeDAO;
 import donnee.TremblementDeTerreDAO;
+import modele.Asteroide;
 import modele.FaitInutile;
 import modele.Nouvelle;
 import modele.TremblementDeTerre;
 import vue.VueFaitInutile;
-import vue.VueGardienHockeyLigueNationnal;
-import vue.VueJoueurHockeyLigueNationnal;
 import vue.VueMirador;
 import vue.VueNouvelles;
 import vue.VueTremblementDeTerre;
@@ -67,7 +67,16 @@ public class App {
 		
 		//Controleur.choisirVuePrincipale(VueFaitInutile.class);
 		
-		// Tests
+		// Tests astéroides
+		
+		/*
+		AsteroideDAO asteroideDAO = new AsteroideDAO();
+		List<Asteroide> asteroides = asteroideDAO.listerAsteroide();
+		Asteroide asteroide = asteroides.get(0);
+		System.out.println(asteroide.getNom());
+		*/
+		
+		//Controleur.choisirVuePrincipale(Vue.class);
 		
 		
 		//Fenetre.launch(Fenetre.class, parametres);
