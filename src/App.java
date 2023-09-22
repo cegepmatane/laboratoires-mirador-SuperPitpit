@@ -8,9 +8,11 @@ import java.util.Scanner;
 
 import architecture.Controleur;
 import architecture.Fenetre;
+import donnee.FaitInutileDAO;
 import donnee.NouvelleDAO;
 import donnee.StationSpatialeDAO;
 import donnee.TremblementDeTerreDAO;
+import modele.FaitInutile;
 import modele.Nouvelle;
 import modele.TremblementDeTerre;
 import vue.VueGardienHockeyLigueNationnal;
@@ -41,21 +43,28 @@ public class App {
 		//StationSpatialeDAO sationSpatiale = new StationSpatialeDAO();
 		//sationSpatiale.detaillerPosition();
 		
-		
-			
-		
-		
 		// Test sur les tremblements de terre
 		
-		//TremblementDeTerreDAO tremblementDeTerreDAO = new TremblementDeTerreDAO();
-		//List<TremblementDeTerre> tremblementDeTerres = tremblementDeTerreDAO.listerTremblementDeTerre();
-		//TremblementDeTerre tremblementDeTerre = tremblementDeTerres.get(0);
-		//System.out.println(tremblementDeTerre.getEmplacement());
+		/*
+		TremblementDeTerreDAO tremblementDeTerreDAO = new TremblementDeTerreDAO();
+		List<TremblementDeTerre> tremblementDeTerres = tremblementDeTerreDAO.listerTremblementDeTerre();
+		TremblementDeTerre tremblementDeTerre = tremblementDeTerres.get(0);
+		System.out.println(tremblementDeTerre.getEmplacement());
+		*/
 		
-		Controleur.choisirVuePrincipale(VueTremblementDeTerre.class);
+		//Controleur.choisirVuePrincipale(VueTremblementDeTerre.class);
 		
 		
-		Fenetre.launch(Fenetre.class, parametres);
+		// Test pour les faits inutiles
+		
+		/*
+		FaitInutileDAO faitInutileDAO = new FaitInutileDAO();
+		FaitInutile faitInutile = faitInutileDAO.listerFaitInutile();
+		System.out.println(faitInutile.getLangue());
+		*/
+		
+		
+		//Fenetre.launch(Fenetre.class, parametres);
 	}
 
 }
