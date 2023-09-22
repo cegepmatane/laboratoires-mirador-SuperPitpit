@@ -1,12 +1,14 @@
 package modele;
 
+import java.time.LocalDateTime;
+
 public class TremblementDeTerre {
 
 	protected String emplacement;
-	protected String date;
+	protected LocalDateTime date;
 	protected float longitude;
 	protected float latitude;
-	protected int magnitude;
+	protected float magnitude;
 	
 	public TremblementDeTerre() {
 		
@@ -15,7 +17,7 @@ public class TremblementDeTerre {
 	
 	
 
-	public TremblementDeTerre(String emplacement, String date, float longitude, float latitude, int magnitude) {
+	public TremblementDeTerre(String emplacement, LocalDateTime date, float longitude, float latitude, float magnitude) {
 		super();
 		this.emplacement = emplacement;
 		this.date = date;
@@ -27,11 +29,11 @@ public class TremblementDeTerre {
 
 
 
-	public String getDate() {
+	public LocalDateTime getDate() {
 		return date;
 	}
 
-	public void setDate(String date) {
+	public void setDate(LocalDateTime date) {
 		this.date = date;
 	}
 
@@ -59,11 +61,11 @@ public class TremblementDeTerre {
 		this.latitude = latitude;
 	}
 
-	public int getMagnitude() {
+	public float getMagnitude() {
 		return magnitude;
 	}
 
-	public void setMagnitude(int magnitude) {
+	public void setMagnitude(float magnitude) {
 		this.magnitude = magnitude;
 	}
 

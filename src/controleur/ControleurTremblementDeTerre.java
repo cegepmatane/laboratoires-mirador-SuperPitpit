@@ -3,6 +3,7 @@ package controleur;
 import com.sun.media.jfxmedia.logging.Logger;
 
 import architecture.Controleur;
+import donnee.TremblementDeTerreDAO;
 import vue.VueTremblementDeTerre;
 
 public class ControleurTremblementDeTerre extends Controleur {
@@ -16,6 +17,10 @@ public class ControleurTremblementDeTerre extends Controleur {
 	
 	public void initialiser(){
 		
+		TremblementDeTerreDAO tremblementDeTerreDAO = new TremblementDeTerreDAO();
+		
+		tremblementDeTerreDAO.listerTremblementDeTerre();
+		
 		VueTremblementDeTerre vue = VueTremblementDeTerre.getInstance();
 		
 		vue.afficherEmplacement("Tonga");
@@ -23,6 +28,8 @@ public class ControleurTremblementDeTerre extends Controleur {
 		vue.afficherDate("23/09/2023");
 		vue.afficherLongitude((float)-2.333);
 		vue.afficherLatitude((float)4.32323);
+		
+		
 		
 	}
 	

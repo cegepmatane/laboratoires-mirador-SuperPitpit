@@ -10,7 +10,9 @@ import architecture.Controleur;
 import architecture.Fenetre;
 import donnee.NouvelleDAO;
 import donnee.StationSpatialeDAO;
+import donnee.TremblementDeTerreDAO;
 import modele.Nouvelle;
+import modele.TremblementDeTerre;
 import vue.VueGardienHockeyLigueNationnal;
 import vue.VueJoueurHockeyLigueNationnal;
 import vue.VueMirador;
@@ -28,7 +30,7 @@ public class App {
 		//Controleur.choisirVuePrincipale(VueJoueurHockeyLigueNationnal.class);
 		//Controleur.choisirVuePrincipale(VueGardienHockeyLigueNationnal.class);
 
-		Controleur.choisirVuePrincipale(VueTremblementDeTerre.class);
+		
 				
 		//NouvelleDAO nouvellesDAO = new NouvelleDAO();
 		//List<Nouvelle> nouvelles = nouvellesDAO.listerNouvelle();
@@ -38,8 +40,18 @@ public class App {
 		
 		//StationSpatialeDAO sationSpatiale = new StationSpatialeDAO();
 		//sationSpatiale.detaillerPosition();
-				
-		Fenetre.launch(Fenetre.class, parametres);	
+		
+		//Controleur.choisirVuePrincipale(VueTremblementDeTerre.class);
+		//Fenetre.launch(Fenetre.class, parametres);	
+		
+		
+		// Test sur les tremblements de terre
+		
+		TremblementDeTerreDAO tremblementDeTerreDAO = new TremblementDeTerreDAO();
+		List<TremblementDeTerre> tremblementDeTerres = tremblementDeTerreDAO.listerTremblementDeTerre();
+		TremblementDeTerre tremblementDeTerre = tremblementDeTerres.get(0);
+		System.out.println(tremblementDeTerre.getEmplacement());
+		
 	}
 
 }
