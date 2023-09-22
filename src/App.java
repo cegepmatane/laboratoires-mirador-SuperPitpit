@@ -10,11 +10,13 @@ import architecture.Controleur;
 import architecture.Fenetre;
 import controleur.ControleurFaitInutile;
 import donnee.AsteroideDAO;
+import donnee.BitcoinDAO;
 import donnee.FaitInutileDAO;
 import donnee.NouvelleDAO;
 import donnee.StationSpatialeDAO;
 import donnee.TremblementDeTerreDAO;
 import modele.Asteroide;
+import modele.Bitcoin;
 import modele.FaitInutile;
 import modele.Nouvelle;
 import modele.TremblementDeTerre;
@@ -77,7 +79,16 @@ public class App {
 		
 		//Controleur.choisirVuePrincipale(VueAsteroide.class);
 		
-		Fenetre.launch(Fenetre.class, parametres);
+		// Tests bitcoin
+		
+		/*
+		BitcoinDAO bitcoinDAO = new BitcoinDAO();
+		List<Bitcoin> monnaies = bitcoinDAO.listerMonnaie();
+		Bitcoin monnaie = monnaies.get(0);
+		System.out.println(monnaie.getCode());
+		*/
+		
+		//Fenetre.launch(Fenetre.class, parametres);
 	}
 
 }
