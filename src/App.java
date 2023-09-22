@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 import architecture.Controleur;
 import architecture.Fenetre;
+import controleur.ControleurFaitInutile;
 import donnee.FaitInutileDAO;
 import donnee.NouvelleDAO;
 import donnee.StationSpatialeDAO;
@@ -15,6 +16,7 @@ import donnee.TremblementDeTerreDAO;
 import modele.FaitInutile;
 import modele.Nouvelle;
 import modele.TremblementDeTerre;
+import vue.VueFaitInutile;
 import vue.VueGardienHockeyLigueNationnal;
 import vue.VueJoueurHockeyLigueNationnal;
 import vue.VueMirador;
@@ -63,8 +65,10 @@ public class App {
 		System.out.println(faitInutile.getLangue());
 		*/
 		
+		//ControleurFaitInutile controleurFaitInutile = new ControleurFaitInutile();
 		
-		//Fenetre.launch(Fenetre.class, parametres);
+		Controleur.choisirVuePrincipale(VueFaitInutile.class);
+		Fenetre.launch(Fenetre.class, parametres);
 	}
 
 }
