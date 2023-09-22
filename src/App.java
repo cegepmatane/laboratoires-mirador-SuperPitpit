@@ -65,10 +65,12 @@ public class App {
 		System.out.println(faitInutile.getLangue());
 		*/
 		
-		//ControleurFaitInutile controleurFaitInutile = new ControleurFaitInutile();
+		//Controleur.choisirVuePrincipale(VueFaitInutile.class);
 		
-		Controleur.choisirVuePrincipale(VueFaitInutile.class);
-		Fenetre.launch(Fenetre.class, parametres);
+		// Tests
+		
+		
+		//Fenetre.launch(Fenetre.class, parametres);
 	}
 
 }
