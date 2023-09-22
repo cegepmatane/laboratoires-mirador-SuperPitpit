@@ -1,5 +1,7 @@
 package vue;
 
+import java.time.LocalDateTime;
+
 import com.sun.media.jfxmedia.logging.Logger;
 
 import architecture.Vue;
@@ -27,7 +29,7 @@ public class VueTremblementDeTerre extends Vue {
 		emplacementLabel.setText("Emplacement : " + emplacement);
 	}
 	
-	public void afficherMagnitude(int magnitude) {
+	public void afficherMagnitude(float magnitude) {
 		
 		System.out.println("afficherMagnitude");
 		
@@ -36,7 +38,7 @@ public class VueTremblementDeTerre extends Vue {
 		
 	}
 	
-	public void afficherDate(String date) {
+	public void afficherDate(LocalDateTime date) {
 		
 		System.out.println("afficherDate");
 		

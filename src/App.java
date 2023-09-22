@@ -41,17 +41,21 @@ public class App {
 		//StationSpatialeDAO sationSpatiale = new StationSpatialeDAO();
 		//sationSpatiale.detaillerPosition();
 		
-		//Controleur.choisirVuePrincipale(VueTremblementDeTerre.class);
-		//Fenetre.launch(Fenetre.class, parametres);	
+		
+			
 		
 		
 		// Test sur les tremblements de terre
 		
-		TremblementDeTerreDAO tremblementDeTerreDAO = new TremblementDeTerreDAO();
-		List<TremblementDeTerre> tremblementDeTerres = tremblementDeTerreDAO.listerTremblementDeTerre();
-		TremblementDeTerre tremblementDeTerre = tremblementDeTerres.get(0);
-		System.out.println(tremblementDeTerre.getEmplacement());
+		//TremblementDeTerreDAO tremblementDeTerreDAO = new TremblementDeTerreDAO();
+		//List<TremblementDeTerre> tremblementDeTerres = tremblementDeTerreDAO.listerTremblementDeTerre();
+		//TremblementDeTerre tremblementDeTerre = tremblementDeTerres.get(0);
+		//System.out.println(tremblementDeTerre.getEmplacement());
 		
+		Controleur.choisirVuePrincipale(VueTremblementDeTerre.class);
+		
+		
+		Fenetre.launch(Fenetre.class, parametres);
 	}
 
 }
