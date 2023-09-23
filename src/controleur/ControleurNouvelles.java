@@ -23,10 +23,15 @@ public class ControleurNouvelles extends Controleur {
 		
 		VueNouvelles vue = VueNouvelles.getInstance();
 		
+		vue.afficherTitre(nouvelle.getTitre());
+		vue.afficherResume(nouvelle.getResume());
+		vue.afficherUrl(nouvelle.getLien());
 		
+		/*
 		vue.afficherTitre("Le prince de New York");
 		vue.afficherResume("C'est bien");
 		vue.afficherUrl("https");
+		*/
 	}
 
 }
