@@ -21,6 +21,7 @@ import modele.FaitInutile;
 import modele.Nouvelle;
 import modele.TremblementDeTerre;
 import vue.VueAsteroide;
+import vue.VueBitcoin;
 import vue.VueFaitInutile;
 import vue.VueMirador;
 import vue.VueNouvelles;
@@ -88,7 +89,9 @@ public class App {
 		System.out.println(monnaie.getCode());
 		*/
 		
-		//Fenetre.launch(Fenetre.class, parametres);
+		Controleur.choisirVuePrincipale(VueBitcoin.class);
+		
+		Fenetre.launch(Fenetre.class, parametres);
 	}
 
 }
