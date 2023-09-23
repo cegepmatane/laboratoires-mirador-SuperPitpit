@@ -114,11 +114,11 @@
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
-                                    <Label id="auteur-nouvelle" fx:id="auteurNouvelle" prefHeight="86.0" prefWidth="1057.0" text="Auteur : ">
+                                    <Label id="lien-nouvelle" fx:id="lienNouvelle" prefHeight="86.0" prefWidth="1057.0" text="Url : ">
                                        <font>
                                           <Font size="15.0" />
                                        </font></Label>
-                                    <Label id="date-nouvelle" fx:id="dateNouvelle" prefHeight="86.0" prefWidth="1080.0" text="Date : ">
+                                    <Label id="description-nouvelle" fx:id="descriptionNouvelle" prefHeight="86.0" prefWidth="1080.0" text="Description : ">
                                        <font>
                                           <Font size="15.0" />
                                        </font>

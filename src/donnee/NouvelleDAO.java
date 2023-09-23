@@ -46,7 +46,7 @@ public class NouvelleDAO {
 			e.printStackTrace();
 		}
 		
-		System.out.println(xml);
+		//System.out.println(xml);
 		
 		// PARSER
 		

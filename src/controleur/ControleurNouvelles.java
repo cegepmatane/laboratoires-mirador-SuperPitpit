@@ -19,12 +19,14 @@ public class ControleurNouvelles extends Controleur {
 	{
 		NouvelleDAO nouvellesDAO = new NouvelleDAO();
 		List<Nouvelle> nouvelles = nouvellesDAO.listerNouvelle();
-		Nouvelle nouvelle = 
+		Nouvelle nouvelle = nouvelles.get(0);
 		
 		VueNouvelles vue = VueNouvelles.getInstance();
 		
+		
 		vue.afficherTitre("Le prince de New York");
-		vue.afficherAuteur("James Cameron");
+		vue.afficherResume("C'est bien");
+		vue.afficherUrl("https");
 	}
 
 }

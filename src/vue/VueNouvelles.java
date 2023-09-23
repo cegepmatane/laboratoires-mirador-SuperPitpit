@@ -25,11 +25,22 @@ public class VueNouvelles extends Vue {
 		titreLabel.setText("Titre : " + titre);
 	}
 
-	public void afficherAuteur(String auteur) {
-		System.out.println("afficherAuteur");
+	
+	
+	
+	public void afficherResume(String resume) {
+		System.out.println("afficherResume");
 		
-		Label auteurLabel = (Label)lookup("#auteur-nouvelle");
-		auteurLabel.setText("Auteur : " + auteur);
+		Label resumeLabel = (Label)lookup("#description-nouvelle");
+		resumeLabel.setText("Description : " + resume);
+	}
+
+	public void afficherUrl(String url) {
+		System.out.println("afficherUrl");
+		
+		Label urlLabel = (Label)lookup("#lien-nouvelle");
+		urlLabel.setText("Url : " + url);
+		
 	}
 	
 
