@@ -23,7 +23,6 @@ import modele.TremblementDeTerre;
 import vue.VueAsteroide;
 import vue.VueBitcoin;
 import vue.VueFaitInutile;
-import vue.VueMirador;
 import vue.VueNouvelles;
 import vue.VueTremblementDeTerre;
 
@@ -31,21 +30,24 @@ public class App {
 
 	public static void main(String[] parametres) {
 		
-		// Refaire la même ligne pour choisir la ligne voulut
+		
 		// Controleur.choisirVuePrincipale(VueMirador.class);
-		//Controleur.choisirVuePrincipale(VueNouvelles.class);
+		
 		//Controleur.choisirVuePrincipale(VueJoueurHockeyLigueNationnal.class);
 		//Controleur.choisirVuePrincipale(VueGardienHockeyLigueNationnal.class);
 		//StationSpatialeDAO sationSpatiale = new StationSpatialeDAO();
 		//sationSpatiale.detaillerPosition();
 		
+		/*
+		NouvelleDAO nouvellesDAO = new NouvelleDAO();
+		List<Nouvelle> nouvelles = nouvellesDAO.listerNouvelle();
+		for(Nouvelle nouvelle : nouvelles) {
+			System.out.println("Titre : " + nouvelle.getTitre());
+			System.out.println("Url : " + nouvelle.getLien());
+			System.out.println("Description : " + nouvelle.getResume());
+		}*/
 		
-				
-		//NouvelleDAO nouvellesDAO = new NouvelleDAO();
-		//List<Nouvelle> nouvelles = nouvellesDAO.listerNouvelle();
-		//for(Nouvelle nouvelle : nouvelles) {
-		//	System.out.println("Titre : " + nouvelle.getTitre());
-		//}
+		Controleur.choisirVuePrincipale(VueNouvelles.class);
 		
 		// Test sur les tremblements de terre
 		
@@ -89,7 +91,7 @@ public class App {
 		System.out.println(monnaie.getCode());
 		*/
 		
-		Controleur.choisirVuePrincipale(VueBitcoin.class);
+		//Controleur.choisirVuePrincipale(VueBitcoin.class);
 		
 		Fenetre.launch(Fenetre.class, parametres);
 	}

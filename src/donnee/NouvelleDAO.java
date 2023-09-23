@@ -66,8 +66,10 @@ public class NouvelleDAO {
 			for (int position = 0; position<listeNoeudsItems.getLength(); position++) {
 				Element noeudItem = (Element)listeNoeudsItems.item(position);
 				String titre = noeudItem.getElementsByTagName("title").item(0).getTextContent();
+				String url = noeudItem.getElementsByTagName("link").item(0).getTextContent();
+				String description = noeudItem.getElementsByTagName("description").item(0).getTextContent();
 				//System.out.println(titre);
-				Nouvelle nouvelle = new Nouvelle(titre, "");
+				Nouvelle nouvelle = new Nouvelle(titre, description, url);
 				nouvelles.add(nouvelle);
 			}
 			

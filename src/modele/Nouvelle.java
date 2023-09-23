@@ -24,14 +24,14 @@ public class Nouvelle {
 		this.auteur = auteur;
 	}
 
-	public Nouvelle(String titre, String auteur, String date) {
+	
+	public Nouvelle(String titre, String resume, String lien) {
 		super();
 		this.titre = titre;
-		this.auteur = auteur;
-		this.date = date;
+		this.resume = resume;
+		this.lien = lien;
 	}
 
-	
 	public String getTitre() {
 		return titre;
 	}
