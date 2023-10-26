@@ -13,7 +13,6 @@ import donnee.AsteroideDAO;
 import donnee.BitcoinDAO;
 import donnee.FaitInutileDAO;
 import donnee.NouvelleDAO;
-import donnee.StationSpatialeDAO;
 import donnee.TremblementDeTerreDAO;
 import modele.Asteroide;
 import modele.Bitcoin;
@@ -47,7 +46,7 @@ public class App {
 			System.out.println("Description : " + nouvelle.getResume());
 		}*/
 		
-		Controleur.choisirVuePrincipale(VueNouvelles.class);
+		//Controleur.choisirVuePrincipale(VueNouvelles.class);
 		
 		// Test sur les tremblements de terre
 		
@@ -93,7 +92,19 @@ public class App {
 		
 		//Controleur.choisirVuePrincipale(VueBitcoin.class);
 		
-		Fenetre.launch(Fenetre.class, parametres);
+		//Fenetre.launch(Fenetre.class, parametres);
+		
+		// Design pattern Template
+		TremblementDeTerreDAO tremblementDeTerreDAO = new TremblementDeTerreDAO();
+		List<TremblementDeTerre> tremblementDeTerres = tremblementDeTerreDAO.listerTremblementDeTerre();
+		
+		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
+			
+			//System.out.println(tremblementDeTerre.getMagnitude());
+			
+		}
+		
+		
 	}
 
 }
