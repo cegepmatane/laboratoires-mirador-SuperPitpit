@@ -9,12 +9,12 @@ public class ChercheurTremblementDeTerre {
 	protected List<TremblementDeTerre> selection;
 	
 	
-	public ChercheurTremblementDeTerre() {
-		this.tousLesTremblementsDeTerre = new ArrayList<TremblementDeTerre>();
+	public ChercheurTremblementDeTerre(List<TremblementDeTerre> tremblementDeTerres) {
+		this.tousLesTremblementsDeTerre = tremblementDeTerres;
 	}
 
 	public void executer() {
-		
+		System.out.println("ChercheurTremblementDeTerre.executer()");
 		selection = filtrerParLongitude(this.tousLesTremblementsDeTerre);
 		selection = filtrerParLatitude(selection);
 		selection = filtrerParMagnitude(selection);
@@ -23,45 +23,17 @@ public class ChercheurTremblementDeTerre {
 	
 	public List<TremblementDeTerre> filtrerParLongitude(List<TremblementDeTerre> tremblementDeTerres){
 		
-		List<TremblementDeTerre> selection = new ArrayList<TremblementDeTerre>();
-		
-		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
-			
-			//if
-			selection.add(tremblementDeTerre);
-			
-		}
-		
-		return selection;
+		return tremblementDeTerres;
 	}
 	
 	public List<TremblementDeTerre> filtrerParLatitude(List<TremblementDeTerre> tremblementDeTerres){
 		
-		List<TremblementDeTerre> selection = new ArrayList<TremblementDeTerre>();
-		
-		
-		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
-					
-					//if
-			selection.add(tremblementDeTerre);
-					
-		}
-		
-		return selection;
+		return tremblementDeTerres;
 	}
 	
 	public List<TremblementDeTerre> filtrerParMagnitude(List<TremblementDeTerre> tremblementDeTerres){
 		
-		List<TremblementDeTerre> selection = new ArrayList<TremblementDeTerre>();
-		
-		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
-					
-					//if
-			selection.add(tremblementDeTerre);
-					
-		}
-		
-		return selection;
+		return tremblementDeTerres;
 	}
 
 }

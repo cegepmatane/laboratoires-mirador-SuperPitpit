@@ -98,8 +98,14 @@ public class App {
 		TremblementDeTerreDAO tremblementDeTerreDAO = new TremblementDeTerreDAO();
 		List<TremblementDeTerre> tremblementDeTerres = tremblementDeTerreDAO.listerTremblementDeTerre();
 		
-		ChercheurTremblementDeTerre chercheurTremblementDeTerre = new ChercheurTremblementDeTerre();
-		chercheurTremblementDeTerre.executer();
+		//ChercheurTremblementDeTerre chercheurTremblementDeTerre = new ChercheurTremblementDeTerre(tremblementDeTerres);
+		//chercheurTremblementDeTerre.executer();
+		
+		ChercheurTremblementDeTerreLongitudeLatitude chercheurTremblementDeTerreLongitudeLatitude = new ChercheurTremblementDeTerreLongitudeLatitude(tremblementDeTerres);
+		chercheurTremblementDeTerreLongitudeLatitude.executer();
+		
+		CherCheurTremblementDeTerreMagnitude cherCheurTremblementDeTerreMagnitude = new CherCheurTremblementDeTerreMagnitude(tremblementDeTerres);
+		cherCheurTremblementDeTerreMagnitude.executer();
 		
 		/*
 		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
