@@ -6,7 +6,7 @@ import modele.TremblementDeTerre;
 public class ChercheurTremblementDeTerreLongitudeLatitude extends ChercheurTremblementDeTerre{
 
 	public ChercheurTremblementDeTerreLongitudeLatitude(List<TremblementDeTerre> tremblementDeTerres) {
-		
+		super(tremblementDeTerres);
 	}
 	
 	public List<TremblementDeTerre> filtrerParLongitude(List<TremblementDeTerre> tremblementDeTerres){

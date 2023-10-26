@@ -103,9 +103,23 @@ public class App {
 		
 		ChercheurTremblementDeTerreLongitudeLatitude chercheurTremblementDeTerreLongitudeLatitude = new ChercheurTremblementDeTerreLongitudeLatitude(tremblementDeTerres);
 		chercheurTremblementDeTerreLongitudeLatitude.executer();
+		List<TremblementDeTerre> tremblementDeTerres2 = chercheurTremblementDeTerreLongitudeLatitude.getSelection();
+		System.out.println("Les tremblements de terre avec des positions positives sont : ");
+		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
+			
+			System.out.println(tremblementDeTerre.getMagnitude());
+			
+		}
 		
-		CherCheurTremblementDeTerreMagnitude cherCheurTremblementDeTerreMagnitude = new CherCheurTremblementDeTerreMagnitude(tremblementDeTerres);
+		CherCheurTremblementDeTerreMagnitude cherCheurTremblementDeTerreMagnitude = new CherCheurTremblementDeTerreMagnitude(tremblementDeTerres, "Test");
 		cherCheurTremblementDeTerreMagnitude.executer();
+		List<TremblementDeTerre> tremblementDeTerres3 = cherCheurTremblementDeTerreMagnitude.getSelection();
+		System.out.println("Les tremblements de terre avec une magnitude de plus de 5.1 sont : ");
+		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
+			
+			System.out.println(tremblementDeTerre.getMagnitude());
+			
+		}
 		
 		/*
 		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {

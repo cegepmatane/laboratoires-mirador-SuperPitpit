@@ -5,8 +5,11 @@ import modele.TremblementDeTerre;
 
 public class CherCheurTremblementDeTerreMagnitude extends ChercheurTremblementDeTerre{
 
-	public CherCheurTremblementDeTerreMagnitudeList<TremblementDeTerre> tremblementDeTerres() {
-		
+	protected String mot;
+	
+	public CherCheurTremblementDeTerreMagnitude(List<TremblementDeTerre> tremblementDeTerres, String mot) {
+		super(tremblementDeTerres);
+		this.mot = mot;
 	}
 
 	public List<TremblementDeTerre> filtrerParMagnitude(List<TremblementDeTerre> tremblementDeTerres){
