@@ -6,7 +6,7 @@ import modele.TremblementDeTerre;
 public class ChercheurTremblementDeTerre {
 
 	protected List<TremblementDeTerre> tousLesTremblementsDeTerre;
-	
+	protected List<TremblementDeTerre> selection;
 	
 	
 	public ChercheurTremblementDeTerre() {
@@ -15,16 +15,53 @@ public class ChercheurTremblementDeTerre {
 
 	public void executer() {
 		
-		filtrerParLongitude();
+		selection = filtrerParLongitude(this.tousLesTremblementsDeTerre);
+		selection = filtrerParLatitude(selection);
+		selection = filtrerParMagnitude(selection);
 		
 	}
 	
-	protected List<TremblementDeTerre> filtrerParLongitude(){
-		return null;
+	public List<TremblementDeTerre> filtrerParLongitude(List<TremblementDeTerre> tremblementDeTerres){
+		
+		List<TremblementDeTerre> selection = new ArrayList<TremblementDeTerre>();
+		
+		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
+			
+			//if
+			selection.add(tremblementDeTerre);
+			
+		}
+		
+		return selection;
 	}
 	
-	protected List<TremblementDeTerre> filtrerParLatitude(){
-		return null;
+	public List<TremblementDeTerre> filtrerParLatitude(List<TremblementDeTerre> tremblementDeTerres){
+		
+		List<TremblementDeTerre> selection = new ArrayList<TremblementDeTerre>();
+		
+		
+		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
+					
+					//if
+			selection.add(tremblementDeTerre);
+					
+		}
+		
+		return selection;
+	}
+	
+	public List<TremblementDeTerre> filtrerParMagnitude(List<TremblementDeTerre> tremblementDeTerres){
+		
+		List<TremblementDeTerre> selection = new ArrayList<TremblementDeTerre>();
+		
+		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
+					
+					//if
+			selection.add(tremblementDeTerre);
+					
+		}
+		
+		return selection;
 	}
 
 }
