@@ -97,26 +97,39 @@ public class App {
 		// Design pattern Template
 		TremblementDeTerreDAO tremblementDeTerreDAO = new TremblementDeTerreDAO();
 		List<TremblementDeTerre> tremblementDeTerres = tremblementDeTerreDAO.listerTremblementDeTerre();
+		System.out.println("-----------------");
+		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
+			
+			System.out.println(tremblementDeTerre.getEmplacement());
+			
+		}
 		
 		//ChercheurTremblementDeTerre chercheurTremblementDeTerre = new ChercheurTremblementDeTerre(tremblementDeTerres);
 		//chercheurTremblementDeTerre.executer();
-		
-		ChercheurTremblementDeTerreLongitudeLatitude chercheurTremblementDeTerreLongitudeLatitude = new ChercheurTremblementDeTerreLongitudeLatitude(tremblementDeTerres);
+		System.out.println("-----------------");
+		ChercheurTremblementDeTerre chercheurTremblementDeTerreLongitudeLatitude = new ChercheurTremblementDeTerreLongitudeLatitude(tremblementDeTerres);
 		chercheurTremblementDeTerreLongitudeLatitude.executer();
 		List<TremblementDeTerre> tremblementDeTerres2 = chercheurTremblementDeTerreLongitudeLatitude.getSelection();
+		
 		System.out.println("Les tremblements de terre avec des positions positives sont : ");
-		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
+		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres2) {
 			
+			System.out.println(tremblementDeTerre.getEmplacement());
+			System.out.println(tremblementDeTerre.getLongitude());
+			System.out.println(tremblementDeTerre.getLatitude());
 			System.out.println(tremblementDeTerre.getMagnitude());
 			
 		}
 		
-		CherCheurTremblementDeTerreMagnitude cherCheurTremblementDeTerreMagnitude = new CherCheurTremblementDeTerreMagnitude(tremblementDeTerres, "Test");
+		System.out.println("-----------------");
+		ChercheurTremblementDeTerre cherCheurTremblementDeTerreMagnitude = new CherCheurTremblementDeTerreMagnitude(tremblementDeTerres2, "Test");
 		cherCheurTremblementDeTerreMagnitude.executer();
 		List<TremblementDeTerre> tremblementDeTerres3 = cherCheurTremblementDeTerreMagnitude.getSelection();
-		System.out.println("Les tremblements de terre avec une magnitude de plus de 5.1 sont : ");
-		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
+		
+		System.out.println("Les tremblements de terre avec une magnitude de moins de 5.1 sont : ");
+		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres3) {
 			
+			System.out.println(tremblementDeTerre.getEmplacement());
 			System.out.println(tremblementDeTerre.getMagnitude());
 			
 		}

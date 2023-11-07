@@ -10,13 +10,16 @@ public class ChercheurTremblementDeTerreLongitudeLatitude extends ChercheurTremb
 	}
 	
 	public List<TremblementDeTerre> filtrerParLongitude(List<TremblementDeTerre> tremblementDeTerres){
-		
+		System.out.println("ChercheurTremblementDeTerreLongitudeLatitude.filtrerParLongitude()");
 		List<TremblementDeTerre> selection = new ArrayList<TremblementDeTerre>();
 		
 		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
 			
-			//if
-			selection.add(tremblementDeTerre);
+			
+			if (tremblementDeTerre.getLongitude() > 0) {
+				selection.add(tremblementDeTerre);
+			}
+			
 			
 		}
 		
@@ -25,13 +28,16 @@ public class ChercheurTremblementDeTerreLongitudeLatitude extends ChercheurTremb
 	
 	public List<TremblementDeTerre> filtrerParLatitude(List<TremblementDeTerre> tremblementDeTerres){
 		
+		System.out.println("ChercheurTremblementDeTerreLongitudeLatitude.filtrerParLatitude()");
 		List<TremblementDeTerre> selection = new ArrayList<TremblementDeTerre>();
 		
 		
 		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
 					
-					//if
-			selection.add(tremblementDeTerre);
+			if (tremblementDeTerre.getLatitude() > 0) {
+				selection.add(tremblementDeTerre);
+			}
+			
 					
 		}
 		

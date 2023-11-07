@@ -13,13 +13,15 @@ public class CherCheurTremblementDeTerreMagnitude extends ChercheurTremblementDe
 	}
 
 	public List<TremblementDeTerre> filtrerParMagnitude(List<TremblementDeTerre> tremblementDeTerres){
-		
+		System.out.println("CherCheurTremblementDeTerreMagnitude.filtrerParMagnitude()");
 		List<TremblementDeTerre> selection = new ArrayList<TremblementDeTerre>();
 		
 		for (TremblementDeTerre tremblementDeTerre:tremblementDeTerres) {
 					
-					//if
-			selection.add(tremblementDeTerre);
+			if (tremblementDeTerre.getMagnitude() < (float)5.1) {
+				selection.add(tremblementDeTerre);
+			}
+			
 					
 		}
 		
